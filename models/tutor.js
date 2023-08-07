@@ -18,7 +18,7 @@ module.exports = (sequelize, DataTypes) => {
       });
       Tutor.hasOne(models.Tutorship, {
         as: "tutorship",
-        foreignKey: "id_tutorship",
+        foreignKey: "id_tutor",
       });
     }
   }

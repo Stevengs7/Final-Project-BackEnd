@@ -32,8 +32,8 @@ const successMsg = {
     UPDATE: "User updated succsessfully",
     DELETE: "User deleted succsessfully",
   },
-  appointment: {
-    CREATED: "Appointment was created successfully",
+  tutorship: {
+    CREATED: "Tutorship was created successfully",
   },
 };
 

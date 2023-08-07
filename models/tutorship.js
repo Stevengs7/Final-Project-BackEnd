@@ -20,11 +20,11 @@ module.exports = (sequelize, DataTypes) => {
   }
   Tutorship.init(
     {
-      id_dentist: {
+      id_tutor: {
         type: DataTypes.INTEGER,
         allowNull: false,
       },
-      id_patient: {
+      id_student: {
         type: DataTypes.INTEGER,
         allowNull: false,
       },
