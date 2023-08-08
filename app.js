@@ -5,6 +5,13 @@ const cookieParser = require("cookie-parser");
 const logger = require("morgan");
 const app = express();
 require("dotenv").config();
+const cors = require("cors");
+const corsOptions = {
+  origin: "*",
+  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+  preflightContinue: false,
+  optionsSuccessStatus: 204,
+};
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
@@ -15,6 +22,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
+app.use(cors(corsOptions));
 
 const router = require("./router");
 app.use(router);
