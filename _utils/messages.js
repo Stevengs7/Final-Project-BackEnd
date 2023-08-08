@@ -24,6 +24,9 @@ const errorMsg = {
     REQUIERED: "Email and Password are required",
     LOGINFAILED: "User login failed",
   },
+  tutorship: {
+    UPDATED: "Tutorship failed updated",
+  },
 };
 
 const successMsg = {
@@ -34,6 +37,7 @@ const successMsg = {
   },
   tutorship: {
     CREATED: "Tutorship was created successfully",
+    UPDATED: "Tutorship was updated successfully",
   },
 };
 
