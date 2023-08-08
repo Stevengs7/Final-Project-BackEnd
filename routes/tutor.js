@@ -10,6 +10,9 @@ router.get("/all-students", tutorController.getStudents);
 router.get("/my-profile", verifyToken, tutorController.myProfile);
 
 /* GET My Profile */
+router.get("/my-tutorship", verifyToken, tutorController.myTutorships);
+
+/* Update my tutorship */
 router.put(
   "/tutorship-update/:id",
   verifyToken,
