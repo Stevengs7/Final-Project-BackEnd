@@ -8,7 +8,7 @@ const router = express.Router();
 router.get("/all-tutors", studentController.getTutors);
 
 /* GET My Profile */
-router.get("/my-profile", verifyToken, isStudent, studentController.myProfile);
+router.get("/my-profile", verifyToken, studentController.myProfile);
 
 /* UPDATE My Profile */
 router.put("/update-profile", verifyToken, studentController.updateProfile);
