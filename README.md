@@ -79,11 +79,17 @@ Tecnologías utilizadas:
 
     ```js
         {
+            // use which id_role do you want
+            // 1 - admin
+            // 2- tutor
+            // 3 - student
+
         "user_name": "Steven",
         "user_last_name": "Garzon",
         "birthday": "1996-08-02",
         "email": "steven@garzon.com",
         "password": "12345678",
+        'id_role': '3',
         }
     ```
 
