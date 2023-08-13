@@ -22,7 +22,7 @@ router.use("/api/student", studentRouter);
 //Tutor
 router.use("/api/tutor", tutorRouter);
 
-//Tutor
+//subject
 router.use("/api/subject", subjectRouter);
 
 module.exports = router;
